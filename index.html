@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VizWars | Data Visualization Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="shell">
+        <header class="topbar">
+            <strong>VIZ WAR / PLAYER CONSOLE</strong>
+            <span class="online">● LOCAL DEMO MODE</span>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="eyebrow">DATA VISUALIZATION CHALLENGE</div>
+                <h1>VIZ <span>WAR.</span></h1>
+                <p>One dataset. One tool. Forty-five minutes. Find the patterns, build your dashboard, and make the data speak.</p>
+                <div class="hero-tags">
+                    <span class="tag green">45 MINUTES</span>
+                    <span class="tag">50 MARKS</span>
+                    <span class="tag">INDIVIDUAL CHALLENGE</span>
+                    <span class="tag">B.TECH / YEARS 1–4</span>
+                </div>
+                <a class="btn btn-green" href="#registration">REGISTER TO PLAY →</a>
+            </section>
+            <section id="registration">
+                <div class="heading"><span>Player registration</span><span>Required fields *</span></div>
+                <form id="registrationForm">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="name">Full name *</label>
+                            <input id="name" maxlength="100" autocomplete="name" required placeholder="Your full name">
+                        </div>
+                        <div class="field">
+                            <label for="roll">Roll number *</label>
+                            <input id="roll" maxlength="40" required placeholder="Your roll number">
+                        </div>
+                        <div class="field">
+                            <label for="year">Year of study *</label>
+                            <select id="year" required>
+                                <option value="">Select year</option>
+                                <option>1st Year</option><option>2nd Year</option>
+                                <option>3rd Year</option><option>4th Year</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="branch">Branch *</label>
+                            <select id="branch" required>
+                                <option value="">Select branch</option>
+                                <option>CSE (Data Science)</option><option>CSE</option>
+                                <option>CSE (AI & ML)</option><option>Information Technology</option>
+                                <option>ECE</option><option>EEE</option><option>Mechanical Engineering</option>
+                                <option>Civil Engineering</option><option>Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="section">Section *</label>
+                            <select id="section" required>
+                                <option value="">Select section</option>
+                                <option>A</option><option>B</option><option>C</option><option>D</option><option>Other</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="team">Team name (optional)</label>
+                            <input id="team" maxlength="60" placeholder="Your team name">
+                        </div>
+                    </div>
+                    <div class="notice"><strong>Demo privacy:</strong> registration and selected files stay in this browser session. No information is sent to an organizer. Use a connected server for an official event.</div>
+                    <div class="actions">
+                        <button class="btn btn-primary" type="submit" id="registerBtn">REGISTER PLAYER →</button>
+                        <button class="btn" type="reset" id="clearBtn">CLEAR FORM</button>
+                    </div>
+                    <div id="registrationMessage" role="status" aria-live="polite"></div>
+                </form>
+            </section>
+            <!-- Rest of the HTML structure remains the same -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
